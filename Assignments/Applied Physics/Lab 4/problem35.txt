@@ -1,0 +1,39 @@
+GlowScript 3.1 VPython
+
+
+
+#values for x-axis
+
+velocity_x = 460
+
+range = 45.7
+
+
+
+#values for y-axis
+
+velocity_y_initial = 0
+
+
+
+#gravity
+
+g = 9.81
+
+
+
+#time for total journey
+
+time = range / velocity_x
+
+
+
+displacement_y_m = (velocity_y_initial * time) + (0.5 * g * time * time) 
+
+#converting m to cm
+
+displacement_y_cm = displacement_y_m * 100
+
+
+
+print("Rifle must be pointed ", displacement_y_cm, " cm high above the target")
